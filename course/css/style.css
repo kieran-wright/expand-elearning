@@ -1,0 +1,253 @@
+/*
+
+Next colour: #2c3e50;
+Next hover colour: #3498db;
+Disabled colour: #ccc;
+
+*/
+
+/* Expand styles
+-------------------------------------------------- */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  padding-right: 0px !important;
+}
+
+body > .container {
+  padding: 60px 15px 0;
+}
+
+.container .navigation {
+  margin: 20px 0;
+  text-decoration: none;
+}
+
+.logo img{
+  width: 80px;
+  margin-top: -6px;
+}
+
+/* Vertical align return modal
+-------------------------------------------------- */
+
+.vertical-alignment-helper {
+    display:table;
+    height: 100%;
+    width: 100%;
+    pointer-events:none;
+}
+.vertical-align-center {
+    /* To center vertically */
+    display: table-cell;
+    vertical-align: middle;
+    pointer-events:none;
+}
+.modal-content {
+    /* Bootstrap sets the size of the modal in the modal-dialog class, we need to inherit it */
+    width:inherit;
+    height:inherit;
+    /* To center horizontally */
+    margin: 0 auto;
+    pointer-events:all;
+}
+
+/* Navigation
+-------------------------------------------------- */
+
+.navigation a{
+  color: #2c3e50;
+}
+
+.navigation a:hover{
+  color: #3498db;
+}
+
+.disabled{
+  color: #ccc !important;
+}
+
+.disabled:hover{
+  color: #ccc;
+  cursor: default;
+}
+
+/* Footer
+-------------------------------------------------- */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer .container {
+  text-align: right;
+}
+
+.footer .navigation{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+/* Loader
+-------------------------------------------------- */
+
+.load-wrapper{
+  background-color: rgba(255,255,255,0.8);
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+}
+
+.bubblingG {
+  text-align: center;
+  width:90px;
+  height:56px;
+  margin: auto;
+  position: relative;
+  top: 35%;
+}
+
+.bubblingG span {
+  display: inline-block;
+  vertical-align: middle;
+  width: 11px;
+  height: 11px;
+  margin: 28px auto;
+  background: rgb(44,62,80);
+  border-radius: 56px;
+    -o-border-radius: 56px;
+    -ms-border-radius: 56px;
+    -webkit-border-radius: 56px;
+    -moz-border-radius: 56px;
+  animation: bubblingG 1.165s infinite alternate;
+    -o-animation: bubblingG 1.165s infinite alternate;
+    -ms-animation: bubblingG 1.165s infinite alternate;
+    -webkit-animation: bubblingG 1.165s infinite alternate;
+    -moz-animation: bubblingG 1.165s infinite alternate;
+}
+
+#bubblingG_1 {
+  animation-delay: 0s;
+    -o-animation-delay: 0s;
+    -ms-animation-delay: 0s;
+    -webkit-animation-delay: 0s;
+    -moz-animation-delay: 0s;
+}
+
+#bubblingG_2 {
+  animation-delay: 0.3495s;
+    -o-animation-delay: 0.3495s;
+    -ms-animation-delay: 0.3495s;
+    -webkit-animation-delay: 0.3495s;
+    -moz-animation-delay: 0.3495s;
+}
+
+#bubblingG_3 {
+  animation-delay: 0.699s;
+    -o-animation-delay: 0.699s;
+    -ms-animation-delay: 0.699s;
+    -webkit-animation-delay: 0.699s;
+    -moz-animation-delay: 0.699s;
+}
+
+
+
+@keyframes bubblingG {
+  0% {
+    width: 11px;
+    height: 11px;
+    background-color:rgb(44,62,80);
+    transform: translateY(0);
+  }
+
+  100% {
+    width: 27px;
+    height: 27px;
+    background-color:rgba(52,152,219,0.97);
+    transform: translateY(-24px);
+  }
+}
+
+@-o-keyframes bubblingG {
+  0% {
+    width: 11px;
+    height: 11px;
+    background-color:rgb(44,62,80);
+    -o-transform: translateY(0);
+  }
+
+  100% {
+    width: 27px;
+    height: 27px;
+    background-color:rgba(52,152,219,0.97);
+    -o-transform: translateY(-24px);
+  }
+}
+
+@-ms-keyframes bubblingG {
+  0% {
+    width: 11px;
+    height: 11px;
+    background-color:rgb(44,62,80);
+    -ms-transform: translateY(0);
+  }
+
+  100% {
+    width: 27px;
+    height: 27px;
+    background-color:rgba(52,152,219,0.97);
+    -ms-transform: translateY(-24px);
+  }
+}
+
+@-webkit-keyframes bubblingG {
+  0% {
+    width: 11px;
+    height: 11px;
+    background-color:rgb(44,62,80);
+    -webkit-transform: translateY(0);
+  }
+
+  100% {
+    width: 27px;
+    height: 27px;
+    background-color:rgba(52,152,219,0.97);
+    -webkit-transform: translateY(-24px);
+  }
+}
+
+@-moz-keyframes bubblingG {
+  0% {
+    width: 11px;
+    height: 11px;
+    background-color:rgb(44,62,80);
+    -moz-transform: translateY(0);
+  }
+
+  100% {
+    width: 27px;
+    height: 27px;
+    background-color:rgba(52,152,219,0.97);
+    -moz-transform: translateY(-24px);
+  }
+}
+
+/* Bug Fixes
+-------------------------------------------------- */
+
+.modal-open {
+  overflow-y: auto;
+}

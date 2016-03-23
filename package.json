@@ -1,0 +1,27 @@
+{
+  "name": "expand-elearning",
+  "version": "0.1.0",
+  "description": "Expand: An e-learning framework for building SCORM courses",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kieran-wright/expand-elearning.git"
+  },
+  "keywords": [
+    "e-learning",
+    "framework",
+    "SCORM",
+    "course",
+    "module",
+    "elearning"
+  ],
+  "author": "Kieran Wright <kieranwright@me.com> (http://kieranwright.co.uk)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kieran-wright/expand-elearning/issues"
+  },
+  "homepage": "https://github.com/kieran-wright/expand-elearning#readme"
+}

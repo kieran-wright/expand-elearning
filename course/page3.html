@@ -1,0 +1,47 @@
+<div class="container">
+	<div class="page-header">
+		<h1>SCORM test page</h1>
+	</div>
+
+ 	<p class="lead">Click the following links to perform tasks:</p>
+
+	<label for="exampleData">Send data to the LMS</label>
+    <input type="text" class="form-control" id="q1" placeholder="Enter answer here">
+	<button type="button" class="btn btn-primary" href="#" onClick="q1();">Send Q1 to the LMS</button>
+
+	<input type="text" class="form-control" id="q2" placeholder="Enter answer here">
+	<button type="button" class="btn btn-primary" href="#" onClick="q2();">Send Q2 to the LMS</button>
+
+	<button type="button" class="btn btn-primary" href="#" onClick="get('cmi.suspend_data'); return false;">Retrieve the data you just sent to the LMS</button>
+	<button type="button" class="btn btn-primary" href="#" onClick="complete(); return false;">Set course status to 'complete'</button>
+	<button type="button" class="btn btn-primary" href="#" onClick="end();">Exit the course</button>
+
+</div>
+
+<style type="text/css">
+<!--
+.btn-primary{
+	display: block;
+	margin-bottom: 10px;
+}
+-->
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    document.getElementById("q1").value = expand_getItem('question1');
+    document.getElementById("q2").value = expand_getItem('question2');
+});
+
+function q1() {
+	var q1 = document.getElementById("q1");
+	expand_setItem('question1', q1.value);
+}
+
+function q2() {
+	var q2 = document.getElementById("q2");
+	expand_setItem('question2', q2.value);
+}
+
+</script>
