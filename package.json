@@ -1,6 +1,6 @@
 {
   "name": "expand-elearning",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Expand: An e-learning framework for building SCORM courses",
   "main": "index.js",
   "scripts": {
@@ -26,6 +26,7 @@
   "homepage": "https://github.com/kieran-wright/expand-elearning#readme",
   "dependencies": {
     "gulp": "^3.9.1",
-    "gulp-scorm-manifest": "^0.6.4"
+    "gulp-scorm-manifest": "^0.6.4",
+    "gulp-zip": "^3.2.0"
   }
 }
