@@ -24,7 +24,7 @@
     "url": "https://github.com/kieran-wright/expand-elearning/issues"
   },
   "homepage": "https://github.com/kieran-wright/expand-elearning#readme",
-  "devDependencies": {
+  "dependencies": {
     "gulp": "^3.9.1",
     "gulp-scorm-manifest": "^0.6.4"
   }
