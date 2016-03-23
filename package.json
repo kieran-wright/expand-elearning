@@ -1,6 +1,6 @@
 {
   "name": "expand-elearning",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Expand: An e-learning framework for building SCORM courses",
   "main": "index.js",
   "scripts": {

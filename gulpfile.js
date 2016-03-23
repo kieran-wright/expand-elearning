@@ -22,7 +22,7 @@ gulp.task('publish', function() {
 });
 
 gulp.task('zip', function() {
-  return gulp.src('course/*')
+  return gulp.src('course/**')
   .pipe(zip('scorm.zip'))
-  .pipe(gulp.dest('SCORM'));
+  .pipe(gulp.dest('scorm'));
 });
