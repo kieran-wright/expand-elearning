@@ -14,12 +14,12 @@ $ npm install expand-elearning
 Starts a local web server for testing during development
 
 ```
-$ npm run start
+$ npm run expand-server
 ```
 
 ## Publish SCORM zip
 Publishes a SCORM conformant zip once finished developing the e-learning course
 
 ```
-$ npm run scorm
+$ npm run expand-scorm
 ```

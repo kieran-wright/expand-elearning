@@ -1,12 +1,12 @@
 {
   "name": "expand-elearning",
-  "version": "0.3.0",
+  "version": "0.3.1",
   "description": "Expand: An e-learning framework for building SCORM courses",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scorm": "gulp publish",
-    "start": "ws"
+    "expand-scorm": "gulp publish",
+    "expand-server": "ws"
   },
   "repository": {
     "type": "git",
