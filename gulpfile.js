@@ -8,9 +8,9 @@ gulp.task('publish', function() {
   gulp.src('course/**')
   .pipe(manifest({
     version: '1.2',
-    courseId: 'Test course',
-    SCOtitle: 'Test module',
-    moduleTitle: 'Test module',
+    courseId: 'Expand course',
+    SCOtitle: 'Expand module',
+    moduleTitle: 'Expand module',
     launchPage: 'index.html',
     fileName: 'imsmanifest.xml'
   }))

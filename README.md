@@ -3,6 +3,8 @@ Expand: An e-learning framework for building SCORM courses
 
 See Github repository for detailed documentation <https://github.com/kieran-wright/expand-elearning/wiki>
 
+Send us your feedback on Expand <a href="https://kieranwright.typeform.com/to/k4xVld" target="_blank">here</a>
+
 ## Installation
 Installs Expand with all dependencies
 

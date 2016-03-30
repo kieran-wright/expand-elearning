@@ -1,19 +1,44 @@
 <div class="container">
-  <div class="page-header">
-    <h1>What is Expand?</h1>
-  </div>
-      <div class="row text-center">
-        <div class="col-md-4">
-            <img src="img/mobile.png">
-            <p class="lead" style="padding-top:10px;">Mobile and tablet friendly</p>
-        </div>
-        <div class="col-md-4">
-            <img src="img/code.png">
-            <p class="lead" style="padding-top:10px;">Easily begin developing</p>
-        </div>
-        <div class="col-md-4">
-            <img src="img/thumb-up.png">
-            <p class="lead" style="padding-top:10px;">Completely open source</p>
-        </div>
-    </div>
+	<div class="page-header">
+		<h1>Examples of sending and receiving data from an LMS</h1>
+	</div>
+
+	<label for="exampleData">Send data to the LMS</label>
+    <input type="text" class="form-control" id="q1" placeholder="Enter your first name here">
+	<button type="button" class="btn btn-primary" href="#" onClick="q1();">Send first name to the LMS</button>
+
+	<input type="text" class="form-control" id="q2" placeholder="Enter your last name here">
+	<button type="button" class="btn btn-primary" href="#" onClick="q2();">Send last name to the LMS</button>
+
+	<p>The values from the above input boxes are sent to the LMS using the <strong>expand_setItem</strong> function.</p>
+
+	<p>Notice that when you return to this page from the LMS, the above saved data is populated into the input boxes using the <strong>expand_getItem</strong> function.</p>
+
+	<br><br><button type="button" class="btn btn-primary" href="#" onClick="expand_next(4);">Example skip to last page button</button>
 </div>
+
+<style type="text/css">
+.btn-primary{
+	display: block;
+	margin-bottom: 10px;
+}
+</style>
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+    document.getElementById("q1").value = expand_getItem('question1');
+    document.getElementById("q2").value = expand_getItem('question2');
+});
+
+function q1() {
+	var q1 = document.getElementById("q1");
+	expand_setItem('question1', q1.value);
+}
+
+function q2() {
+	var q2 = document.getElementById("q2");
+	expand_setItem('question2', q2.value);
+}
+
+</script>

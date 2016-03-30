@@ -2,7 +2,7 @@
 -------------------------------------------------- */
 
 //Change this number to the final page number of the module.
-var lastPage = 8;
+var lastPage = 4;
 
 /* Global variables
 -------------------------------------------------- */
@@ -78,6 +78,7 @@ function expand_back(page){
     }
 }
 
+//Loads the appropriate page into the index page
 function expand_loadPage(){
         set('cmi.core.lesson_location', currentPage);
         expand_showLoader();
@@ -87,7 +88,7 @@ function expand_loadPage(){
         });
 }
 
-//Disables next and back buttons if user is on the first or last page
+//Disables next and back buttons if the user is on the first or last page
 function expand_disable(){
     if (currentPage < 2) {
         $("#back").addClass("disabled");
@@ -97,7 +98,7 @@ function expand_disable(){
     
     if (currentPage == lastPage) {
         $("#next").addClass("disabled");
-        complete();
+        expand_complete('completed');
     } else{
         $("#next").removeClass("disabled");
     };
@@ -162,9 +163,9 @@ function init(){
     };
 }
 
-//Sets course completion as complete
-function complete(){
-    expand.set("cmi.core.lesson_status", "completed");
+//Sets course completion completion. Param accepts 'completed', 'incompleted', 'passed' or 'failed'
+function expand_complete(param){
+    expand.set("cmi.core.lesson_status", param);
 }
 
 //Sets the data to be sent to the LMS
